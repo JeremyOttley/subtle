@@ -127,7 +127,7 @@ two ways to define chains for grabs:
       *Example*: grab "C-y Return", "urxvt"
 
 **** Mouse buttons
-
+#+begin_src ruby
 [*B1*] = Button1 (Left mouse button)
 
 [*B2*] = Button2 (Middle mouse button)
@@ -137,9 +137,9 @@ two ways to define chains for grabs:
 [*B4*] = Button4 (Mouse wheel up)
 
 [*B5*] = Button5 (Mouse wheel down)
-
+#+end_src
 **** Modifiers
-
+#+begin_src ruby
 [*A*] = Alt key
 
 [*C*] = Control key
@@ -149,12 +149,12 @@ two ways to define chains for grabs:
 [*S*] = Shift key
 
 [*W*] = Super (Windows) key
-
+#+end_src
 **** Action
 
 An action is something that happens when a grab is activated, this can be one
 of the following:
-
+#+begin_src ruby
 [*symbol*] Run a subtle action
 
 [*string*] Start a certain program
@@ -162,15 +162,15 @@ of the following:
 [*array*]  Cycle through gravities
 
 [*lambda*] Run a Ruby proc
-
+#+end_src
 **** Example
 
 This will create a grab that starts a urxvt when Alt+Enter are pressed:
-
+#+begin_src ruby
   grab "A-Return", "urxvt"
   
   grab "C-a c",    "urxvt"
-
+#+end_src
 **** Link
 
 [[http://subforge.org/projects/subtle/wiki/Grabs][Grabs]]
@@ -191,9 +191,9 @@ The simple way just needs a name and a regular expression to just handle the
 placement:
 
 **** Example
-
+#+begin_src ruby
 tag "terms", "terms"
-
+#+end_src
 **** Extended
 
 Additionally tags can do a lot more then just control the placement - they
@@ -269,7 +269,7 @@ chosen automatically.
                (see man regex(7)) or window id. Per default tags will only
                match the WM_NAME and the WM_CLASS portion of a client, this
                can be changed with following possible values:
-
+#+begin_src ruby
                [*:name*]      Match the WM_NAME
                
                [*:instance*]  Match the first (instance) part from WM_CLASS
@@ -279,13 +279,13 @@ chosen automatically.
                [*:role*]      Match the window role
                
                [*:type*]      Match the window type
-
+#+end_src
                Examples: match instance: "urxvt"
-               
+#+begin_src ruby               
                          match [:role, :class] => "test"
                          
                          match "[xa]+term"
-                         
+   #+end_src                      
                Link:     [[http://subforge.org/projects/subtle/wiki/Tagging#Match][Match]]
 
 [*position*]   Similar to the geometry property, this property just sets the
