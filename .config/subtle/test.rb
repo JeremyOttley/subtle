@@ -294,6 +294,54 @@ end # }}}
 tag "terminal", "urxvt|urxvtc|xterm|konsole|kitty"
 tag "web",      "qutebrowser|dwb|iceweasel|midori|chromium|icedove|hotot|pidgin"
 
+# Placement
+tag "editor" do
+  match  "[g]?vim"
+  resize true
+end
+
+tag "fixed" do
+  geometry [ 10, 10, 100, 100 ]
+  stick    true
+end
+
+tag "resize" do
+  match  "sakura|gvim"
+  resize true
+end
+
+tag "gravity" do
+  gravity :center
+end
+
+# Modes
+tag "stick" do
+  match "mplayer"
+  float true
+  stick true
+end
+
+tag "float" do
+  match "display"
+  float true
+end
+
+# Gimp
+tag "gimp_image" do
+  match   :role => "gimp-image-window"
+  gravity :gimp_image
+end
+
+tag "gimp_toolbox" do
+  match   :role => "gimp-toolbox$"
+  gravity :gimp_toolbox
+end
+
+tag "gimp_dock" do
+  match   :role => "gimp-dock"
+  gravity :gimp_dock
+end
+
 # Views
 
 grab "W-1", :ViewSwitch1
