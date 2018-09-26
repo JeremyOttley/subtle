@@ -430,3 +430,7 @@ on :start do
       Subtlext::Subtle.spawn "compton -CGbc -t -8 -l -9 -r 6 -o 0.7 -m 1.0"
       Subtlext::Subtle.spawn "xautolock -time 15 -locker 'i3lock -ubi /home/gazbit/.wallpapers/*.png'" 
     end
+
+on :reload do
+    Subtlext::Client.spawn( "sh ~/.config/polybar/launch.sh" )
+end
