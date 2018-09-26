@@ -1,0 +1,72 @@
+#	  ___     ___    ___ ___   _____    ___  _____   _____   
+#	/' _ `\  /'___\/' __` __`\/\ '__`\ /'___/\ '__`\/\ '__`\ 
+#	/\ \/\ \/\ \__//\ \/\ \/\ \ \ \L\ /\ \__\ \ \L\ \ \ \L\ \
+#	\ \_\ \_\ \____\ \_\ \_\ \_\ \ ,__\ \____\ \ ,__/\ \ ,__/
+#	 \/_/\/_/\/____/\/_/\/_/\/_/\ \ \/ \/____/\ \ \/  \ \ \/ 
+#	                             \ \_\         \ \_\   \ \_\ 
+#	                              \/_/          \/_/    \/_/ 
+
+
+# mpd
+mpd_port = "6600"
+
+
+# display
+song_list_format = "$0%t"
+song_columns_list_format = "(100)[white]{t}"
+song_status_format = "$3%t"
+playlist_display_mode = "columns" (classic/columns)
+
+
+# now playing
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b«"
+
+# playlist
+browser_playlist_prefix = "$3 ♥ $3 "
+
+
+# delays
+playlist_disable_highlight_delay = "1"
+message_delay_time= "1"
+
+
+# progress bar "───"
+progressbar_look = "▃▃▃"
+progressbar_color = "black"
+progressbar_elapsed_color = "blue"
+
+
+# colors
+colors_enabled = "yes"
+empty_tag_color = "white"
+statusbar_color = "white"
+state_line_color = "white"
+state_flags_color = "white"
+main_window_color = "white"
+header_window_color = "white"
+
+
+# misc
+display_bitrate = "no"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+titles_visibility = "no"
+statusbar_visibility = "no"
+mouse_support = "yes"
+header_visibility = "no"
+display_remaining_time = "no"
+ask_before_clearing_playlists = "yes"
+discard_colors_if_item_is_selected = "yes"
+allow_for_physical_item_deletion = "yes"
+seek_time = 5
+
+
+# visualizer
+visualizer_in_stereo = yes
+visualizer_sync_interval = "30"
+visualizer_output_name = "my_fifo"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_type = ellipse
+visualizer_color = blue, cyan, green, yellow, magenta, red
+visualizer_look = "▊▊"
