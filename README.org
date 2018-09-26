@@ -13,10 +13,15 @@ or both.
 *** Properties
 
 [*stipple*]    This property adds a stipple pattern to both screen panels.
+
                Example: stipple "~/stipple.xbm"
+               
                         stipple Subtlext::Icon.new("~/stipple.xbm")
+                        
 [*top*]        This property adds a top panel to the screen.
+
                Example: top [ :views, :title ]
+               
 [*bottom*]     This property adds a bottom panel to the screen.
 
                Example: bottom [ :views, :title ]
