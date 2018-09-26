@@ -26,7 +26,7 @@ git clone https://github.com/jeremyottley/bash-utils.git ~/.bash
 git clone https://github.com/jeremyottley/Startpages.git ~/.startpages
 git clone https://github.com/jeremyottley/.pandoc.git ~/.pandoc
 git clone https://github.com/jeremyottley/.org.git ~/.org
-git clone https://github.com/JeremyOttley/.Xresources.d.git ~/.Xresources.d
+#git clone https://github.com/JeremyOttley/.Xresources.d.git ~/.Xresources.d
 
 curl -sLf https://spacevim.org/install.sh | bash
 git clone https://github.com/jeremyottley/.wallpapers ~/.wallpapers
