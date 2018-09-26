@@ -1,0 +1,14 @@
+[Unit]
+Description=Set the displays on X display %I
+Documentation=man:xrdb(1)
+Before=X11@%i.target
+Requisite=X11@%i.target
+
+[Service]
+Environment=DISPLAY=%I
+Type=oneshot
+ExecStart=%h/bin/monitors.sh
+SyslogIdentifier=xrandr-monitors-script
+
+[Install]
+WantedBy=X11@%i.target
