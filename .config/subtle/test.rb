@@ -280,6 +280,14 @@ grab "XF86AudioRaiseVolume", "amixer set Master 1%+ unmute"
     grab "XF86AudioPrev",        "ncmpcpp prev"
     grab "XF86AudioNext",        "ncmpcpp next"
 
+# Run Ruby lambdas
+grab "S-F2" do |c|
+  puts c.name
+end
+
+grab "S-F3" do
+  puts Subtlext::VERSION
+end # }}}
 
 # Tags
 
