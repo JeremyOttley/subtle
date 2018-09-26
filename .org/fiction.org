@@ -1,0 +1,115 @@
+#+TITLE: Title
+#+AUTHOR: J. M. Ottley
+#+DATE: 2018-07-31
+#+DESCRIPTION: journal entry
+#+KEYWORDS: personal, project, schoolwork
+
+* Refile 
+
+for things I just need to write down fast, it's a list of things that need to be refiled later
+
+* Things Todo 
+
+a list of things I must remember to do in the story
+
+* Plot 
+
+the shape of the story, as it is at the time. Also a reminder of what I've done so far
+
+* Story 
+
+the story itself
+
+* Characters 
+
+notes
+
+* Places 
+
+notes
+
+* Scenes 
+
+notes
+
+* Quotations 
+
+notes
+
+* Styles 
+
+to remind me just how I wrote things out e.g. Daddy Bear, not Daddy bear
+
+* Ideas 
+
+ideas that may or may not be included in the story
+
+;; ;; ;; ;; ;; ;;
+;;   Example   ;;
+;; ;; ;; ;; ;; ;;
+
+;;* Refile
+
+;;* Things Todo
+
+;;** Resolve what happens to Mummy Bear
+
+;;* Plot
+
+;;** Episode 1
+
+;;Bears make porridge, go into woods
+
+;;** Episode 2
+
+;;Goldilocks arrives, eats the porridge, falls asleep
+
+;;** Episode 3
+
+;;Bears return.  Find Goldilocks, threaten to eat her
+
+;;** Episode 4
+
+;;Big Bad Wolf saves the day
+
+;;* Story
+
+;;** Episode 1
+
+;;Once upon a time there were three bears.  Mummy Bear, Daddy Bear, Baby Bear etc...
+
+;;* Characters
+
+;;** Daddy Bear (38)
+
+;;Brown fur, brown eyes.
+
+;;Biggest bear.  Gruff.  
+
+;;** Mummy Bear (39)
+
+;;Black fur, golden eyes.
+
+;;Clever, sarcastic
+
+;;* Places
+
+;;** Wood
+
+;;** Cabin
+
+;;Built of wood.  Three rooms.  Enter directly into main room, no hallway.
+
+;;* Scenes
+
+;;* Quotations
+
+;;** Who's been eating my porridge?
+
+;;** Then I'll huff and I'll puff and I'll blow your greenhouse down
+
+;;* Ideas
+
+;;** Bears have an invisible motorbike
+
+;;** Daddy Bear once served time in prison for bearslaughter
