@@ -1,3 +1,13 @@
+#+TITLE:  Dark Souls 3: Pure Pyro Build
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
+#+AUTHOR: Jeremy Ottley
+#+EMAIL:  jeremy.ottley@gmail.com
+#+LANGUAGE:   en
+;;#+HTML_HEAD:      <style type="text/css">#outline-container-introduction{ clear:both; }</style>
+;;#+HTML_HEAD:      <style type="text/css">#table-of-contents{ max-width:100%; }</style>
+#+DATE:   2018 Oct 30
+#+TAGS:   Pyromancer(p)
+
 ** Options
 
 Following options change behaviour and sizes of the window manager:
