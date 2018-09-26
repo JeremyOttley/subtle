@@ -1,4 +1,4 @@
-#+TITLE:  Dark Souls 3: Pure Pyro Build
+#+TITLE:  Subtle Window Manager
 
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 
