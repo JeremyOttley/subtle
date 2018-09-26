@@ -1,6 +1,8 @@
+#+TITLE: The Snowflake Method
+
 In a nutshell, you describe the plot of your novel in a single sentence; then in a single paragraph; then in four paragraphs; then in four pages; then you make a list of every scene in the story; then you write. This fractal structure gives the Snowflake method its name.
 #+begin_src elisp
-#+TITLE: The Snowflake Method
+#+TITLE: Title
 #+AUTHOR: J. M. Ottley
 #+DATE: 2018-07-31
 #+DESCRIPTION: journal entry
