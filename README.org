@@ -513,3 +513,13 @@ This hook will print the name of the window that gets the focus:
 **** Link
 
 [[http://subforge.org/projects/subtle/wiki/Hooks][Hooks]]
+
+#+DESCRIPTION: J.M. Ottley Subtle Configuration
+
+#+PROPERTY:    header-args:ruby   :tangle no
+#+PROPERTY:    header-args:sh     :tangle no
+#+PROPERTY:    header-args:       :results silent   :eval no-export   :comments org
+
+#+OPTIONS:     num:nil toc:nil todo:nil tasks:nil tags:nil
+#+OPTIONS:     skip:nil author:nil email:nil creator:nil timestamp:nil
+#+INFOJS_OPT:  view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
