@@ -1,0 +1,25 @@
+# Settings
+set window-height 1024
+set window-width 768
+set adjust-open width
+set smooth-scroll true
+#set first-page-column 2
+set first-page-column 1:1
+set statusbar-home-tilde true
+set window-title-basename true
+set selection-clipboard clipboard
+set guioptions ""
+
+# Key bindings
+map [normal]     <PageUp>   navigate previous
+map [fullscreen] <PageUp>   navigate previous
+map [normal]     <PageDown> navigate next
+map [fullscreen] <PageDown> navigate next
+map [index] q quit
+
+# Font
+set font "OfficeCodePro 9"
+
+# Colors
+set statusbar-bg "#E7E8EB"
+set statusbar-fg "#000000"
