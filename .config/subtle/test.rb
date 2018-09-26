@@ -100,6 +100,105 @@ end
 
 # Gravities
 
+# set :tiling, true
+
+# Top left
+gravity :tl_a1,             [   0,   0,  33,  33 ]
+gravity :tl_a2,             [   0,   0,  50,  33 ]
+gravity :tl_a3,             [   0,   0,  67,  33 ]
+
+gravity :tl_b1,             [   0,   0,  33,  50 ]
+gravity :tl_b2,             [   0,   0,  50,  50 ]
+gravity :tl_b3,             [   0,   0,  67,  50 ]
+
+gravity :tl_c1,             [   0,   0,  33,  67 ]
+gravity :tl_c2,             [   0,   0,  50,  67 ]
+gravity :tl_c3,             [   0,   0,  67,  67 ]
+
+# Top center
+gravity :tc_a1,             [   0,   0, 100,  50 ]
+gravity :tc_a2,             [   0,   0, 100,  67 ]
+gravity :tc_a3,             [   0,   0, 100,  33 ]
+
+gravity :tc_b1,             [  33,   0,  34,  33 ]
+gravity :tc_b2,             [  33,   0,  34,  50 ]
+gravity :tc_b3,             [  33,   0,  34,  67 ]
+
+# Top right
+gravity :tr_a1,             [  67,   0,  33,  33 ]
+gravity :tr_a2,             [  50,   0,  50,  33 ]
+gravity :tr_a3,             [  33,   0,  67,  33 ]
+
+gravity :tr_b1,             [  67,   0,  33,  50 ]
+gravity :tr_b2,             [  50,   0,  50,  50 ]
+gravity :tr_b3,             [  33,   0,  67,  50 ]
+
+gravity :tr_c1,             [  67,   0,  33,  67 ]
+gravity :tr_c2,             [  50,   0,  50,  67 ]
+gravity :tr_c3,             [  33,   0,  67,  67 ]
+
+# Left
+gravity :l_a1,              [   0,  33,  33,  34 ]
+gravity :l_a2,              [   0,  33,  50,  34 ]
+gravity :l_a3,              [   0,  33,  67,  34 ]
+
+gravity :l_b1,              [   0,  50,  33, 100 ]
+gravity :l_b2,              [   0,  50,  50, 100 ]
+gravity :l_b3,              [   0,  50,  67, 100 ]
+
+
+# Center
+gravity :center,            [   0,   0, 100, 100 ]
+
+# Right
+gravity :r_a1,              [  67,  33,  33,  34 ]
+gravity :r_a2,              [  50,  33,  50,  34 ]
+gravity :r_a3,              [  33,  33,  67,  34 ]
+
+gravity :r_b1,              [  67,  50,  33, 100 ]
+gravity :r_b2,              [  50,  50,  50, 100 ]
+gravity :r_b3,              [  33,  50,  67, 100 ]
+
+# Bottom left
+gravity :bl_a1,             [   0,  67,  33,  33 ]
+gravity :bl_a2,             [   0,  67,  50,  33 ]
+gravity :bl_a3,             [   0,  67,  67,  33 ]
+
+gravity :bl_b1,             [   0,  50,  33,  50 ]
+gravity :bl_b2,             [   0,  50,  50,  50 ]
+gravity :bl_b3,             [   0,  50,  67,  50 ]
+
+gravity :bl_c1,             [   0,  33,  33,  67 ]
+gravity :bl_c2,             [   0,  33,  50,  67 ]
+gravity :bl_c3,             [   0,  33,  67,  67 ]
+
+# Bottom center
+gravity :bc_a1,             [   0,  50, 100,  50 ]
+gravity :bc_a2,             [   0,  33, 100,  67 ]
+gravity :bc_a3,             [   0,  67, 100,  33 ]
+
+gravity :bc_b1,             [  33,  67,  34,  33 ]
+gravity :bc_b2,             [  33,  50,  34,  50 ]
+gravity :bc_b3,             [  33,  33,  34,  67 ]
+
+# Bottom right
+gravity :br_a1,             [  67,  67,  33,  33 ]
+gravity :br_a2,             [  50,  67,  50,  33 ]
+gravity :br_a3,             [  33,  67,  67,  33 ]
+
+gravity :br_b1,             [  67,  50,  33,  50 ]
+gravity :br_b2,             [  50,  50,  50,  50 ]
+gravity :br_b3,             [  33,  50,  67,  50 ]
+
+gravity :br_c1,             [  67,  33,  33,  67 ]
+gravity :br_c2,             [  50,  33,  50,  67 ]
+gravity :br_c3,             [  33,  33,  67,  67 ]
+
+# Gimp
+gravity :gimp_image,        [  10,   0,  80, 100 ]
+gravity :gimp_toolbox,      [   0,   0,  10, 100 ]
+gravity :gimp_dock,         [  90,   0,  10, 100 ]
+
 # Keys
 
     grab "XF86Tools",            "mpd"
