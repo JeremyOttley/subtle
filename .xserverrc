@@ -1,0 +1,12 @@
+#!/bin/sh
+#       __  _____  ___ _ ____   _____ _ __ _ __ ___ 
+#       \ \/ / __|/ _ \ '__\ \ / / _ \ '__| '__/ __|
+#        >  <\__ \  __/ |   \ V /  __/ |  | | | (__ 
+#       /_/\_\___/\___|_|    \_/ \___|_|  |_|  \___|
+                                            
+# Send the XDG_VTNR as an argument to X if its not defined already
+if [ -z "$XDG_VTNR" ]; then
+  exec /usr/bin/X -nolisten tcp "$@"
+else
+  exec /usr/bin/X -nolisten tcp "$@" vt$XDG_VTNR
+fi
