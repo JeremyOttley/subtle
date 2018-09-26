@@ -54,6 +54,37 @@ color_dark =     ""
 tag "terminal", "urxvt|urxvtc|xterm|konsole|kitty"
 tag "web",      "qutebrowser|dwb|iceweasel|midori|chromium|icedove|hotot|pidgin"
 
+# Views
+
 # Sublets
 
+sublet :mpd do
+      format_string    "%artist% %title%"
+      show_icons       false
+      show_colors      true
+      show_pause       true
+      artist_color     color_medium
+      title_color      color_light
+      pause_color      color_medium
+      stop_color       color_medium
+      stop_text        "Stop"
+      pause_text       "Pause"
+      not_running_text "N/A"
+    end
+      
+    sublet :clock2 do
+      interval         30
+      time_format      "%H:%M"
+      time_color       color_above
+      date_format      ""
+    end
+
 # Hooks
+
+on :start do
+      Subtlext::Subtle.spawn "sh ~/.fehbg"
+      Subtlext::Subtle.spawn "mpd"
+      Subtlext::Subtle.spawn "sleep 2s && subtler -r"
+      Subtlext::Subtle.spawn "compton -CGbc -t -8 -l -9 -r 6 -o 0.7 -m 1.0"
+      Subtlext::Subtle.spawn "xautolock -time 15 -locker 'i3lock -ubi /home/gazbit/.wallpapers/*.png'" 
+    end
