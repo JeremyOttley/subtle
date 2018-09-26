@@ -68,3 +68,9 @@ gem install httparty
 # torrent
 # virtualbox + vagrant
 # pandoc
+
+# disable the Chrome Sync functionality, ensuring nothing gets uploaded to Chrome Sync
+defaults write com.google.Chrome SyncDisabled -bool true
+
+# only allow users with example.com email addresses to sign into Chrome
+defaults write com.google.Chrome RestrictSigninToPattern -string ".*@example.com"
