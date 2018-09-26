@@ -371,6 +371,24 @@ grab "W-7", :ViewSwitch7
   end
 end
 
+view "TERMS" do
+  match "terms|default"
+  icon_only false
+end
+
+view "MISC" do
+  match "editor"
+end
+
+view "INET" do
+  match "browser"
+end
+
+view "FILEM" do
+  match "gimp_.*|filem|chat"
+
+end
+
 # Sublets
 
 sublet :mpd do
@@ -394,9 +412,18 @@ sublet :mpd do
       date_format      ""
     end
 
+sublet :fuzzytime do
+  locale        "en"
+end
+
+
+
 # Hooks
 
 on :start do
+  views = Subtlext::View.all.map { |v| v.name }
+  tags  = Subtlext::Tag.all.map { |t| t.name }
+  
       Subtlext::Subtle.spawn "sh ~/.fehbg"
       Subtlext::Subtle.spawn "mpd"
       Subtlext::Subtle.spawn "sleep 2s && subtler -r"
