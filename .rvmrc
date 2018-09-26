@@ -1,0 +1,2 @@
+rvm_install_on_use_flag=1
+#environment_id="ruby-2.4.2"
