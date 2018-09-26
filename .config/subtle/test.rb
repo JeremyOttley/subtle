@@ -37,6 +37,67 @@ color_dark =     ""
 
 # Styles
 
+style :title do
+  padding     1, 10, 0
+  foreground  "#aaaaaa"
+  border_bottom "#303030", 0
+  background  "#151515"
+end
+
+style :focus do
+  padding     1, 4, 0, 4
+  foreground  "#151515"
+  background  "#739896"
+end
+
+style :urgent do
+  padding     3, 4, 0, 4
+  border_bottom "#8edf8d", 2
+  foreground  "#ffffff"
+  background  "#519f50"
+end
+
+style :occupied do
+  padding     1, 4, 0, 4
+  border_bottom "#303030", 2
+  foreground  "#606060"
+  background  "#151515"
+end
+
+style :views do
+  padding     1, 4, 0, 4
+  foreground  "#aaaaaa"
+  background  "#151515"
+end
+
+style :sublets do
+  padding     1, 10, 0
+  foreground  "#707070"
+  border_bottom "#303030", 0
+  background  "#151515"
+end
+
+style :separator do
+  padding     1, 0, 0
+  foreground  "#983528"
+  background  "#151515"
+end
+
+style :clients do
+  active      "#739896", 3
+  inactive    "#252525", 3
+  margin      4
+end
+
+style :subtle do
+  padding     2
+  panel_top   "#151515"
+  panel_bottom "#151515"
+  launcher_top "#202020"
+  launcher_bottom "#ff0000"
+  stipple     "#757575"
+end
+
 # Gravities
 
 # Keys
