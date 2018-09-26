@@ -1,0 +1,90 @@
+! ------------------------------------------------------------------------------
+!  Colors
+! ------------------------------------------------------------------------------
+
+#define base00 #f7f7f7
+#define base01 #e3e3e3
+#define base02 #b9b9b9
+#define base03 #ababab
+#define base04 #525252
+#define base05 #464646
+#define base06 #252525
+#define base07 #101010
+#define base08 #7c7c7c
+#define base09 #999999
+#define base0A #a0a0a0
+#define base0B #cc773f
+#define base0C #868686
+#define base0D #686868
+#define base0E #747474
+#define base0F #5e5e5e
+
+! ------------------------------------------------------------------------------
+!  URxvt
+! ------------------------------------------------------------------------------
+
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+
+
+URxvt.cursorBlink : 0
+URxvt.font        : xft:iosevka:size=11
+URxvt.boldFont    : xft:iosevka:size=11
+URxvt.italicFont  : xft:iosevka:size=11
+
+URxvt.lineSpace           : 3
+URxvt.letterSpace         : 2
+URxvt.scrollBar           : false
+URxvt.internalBorder      : 32
+URxvt.cursorUnderline     : false
+URxvt.geometry            : 70x35
+URxvt.thickness           : 5
+URxvt.titleBar            : false
+URxvt.intensityStyles     : false
+
+
+! URxvt.perl-ext-common : default,matcher
+URxvt.url-launcher    : firefox
+! URxvt.matcher.button  : 1
+
+! ------------------------------------------------------------------------------
+! rofi
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+
+rofi.color-window:    base00 , base00 , base00 , base00 , base03
+rofi.color-normal:    base00 , base03 , base00 , base00 , base07
+rofi.color-active:    base03 , base0E , base00 , base0B , base00
+rofi.color-urgent:    base00 , base03 , base00 , base00 , base03
+
+rofi.fake-transparency : true
+rofi.font              : Monaco 14
+rofi.columns           : 1
+rofi.separator-style   : none
+rofi.hide-scrollbar    : true
+rofi.location          : 1
+rofi.yoffset           : 48
+rofi.xoffset           : 48
+rofi.padding           : 32
+rofi.fullscreen        : false
+rofi.width             : 300
+rofi.lines             : 6

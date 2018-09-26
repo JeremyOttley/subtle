@@ -1,0 +1,13 @@
+URxvt.background: [40]t_background
+Powerline:size=10,xft:FontAwesome:size=10
+URxvt.font: xft:Fira Code:style=Regular:size=11,xft:FontAwesome:size=10
+URxvt.scrollBar: false
+URxvt.saveLines: 2000
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: True
+URxvt.internalBorder: 10
+URxvt.blurRadius: 20
+URxvt.depth: 32
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
