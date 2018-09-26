@@ -201,13 +201,85 @@ gravity :gimp_dock,         [  90,   0,  10, 100 ]
 
 # Keys
 
+# Force reload of config and sublets
+grab "W-C-r", :SubtleReload
+
+# Force restart of subtle
+grab "W-C-S-r", :SubtleRestart
+
+# Quit subtle
+grab "W-C-q", :SubtleQuit
+
+# Move current window
+grab "W-B1", :WindowMove
+
+# Resize current window
+grab "W-B3", :WindowResize
+
+# Toggle floating mode of window
+grab "W-f", :WindowFloat
+
+# Launcher
+grab "W-space" do Subtle::Contrib::Launcher.run; end
+
+# Toggle sticky mode of window (will be visible on all views)
+#grab "W-C-s", :WindowStick
+grab "W-C-s" do |c| c.toggle_stick; c.tags = [ Subtlext::View.current.name ]; end
+
+# Raise window
+grab "W-r", :WindowRaise
+
+# Lower window
+grab "W-m", :WindowLower
+
+# Select next windows
+grab "W-h",  :WindowLeft
+grab "W-j",  :WindowDown
+grab "W-k",  :WindowUp
+grab "W-l",  :WindowRight
+
+# Kill current window
+grab "W-S-k", :WindowKill
+
+# Cycle between given gravities
+
+grab "W-KP_7",  [ :tl_a1, :tl_a2, :tl_a3, :tl_b1, :tl_b2, :tl_b3, :tl_c1, :tl_c2, :tl_c3 ]
+grab "W-KP_8",  [ :tc_a1, :tc_a2, :tc_a3, :tc_b1, :tc_b2, :tc_b3                         ]
+grab "W-KP_9",  [ :tr_a1, :tr_a2, :tr_a3, :tr_b1, :tr_b2, :tr_b3, :tr_c1, :tr_c2, :tr_c3 ]
+
+grab "W-KP_4",  [ :l_a1,  :l_a2,  :l_a3,  :l_b1,  :l_b2,  :l_b3 ]
+grab "W-KP_6",  [ :r_a1,  :r_a2,  :r_a3,  :r_b1,  :r_b2,  :r_b3 ]
+
+grab "W-KP_1",  [ :tl_a1, :tl_a2, :tl_a3, :tl_b1, :tl_b2, :tl_b3, :tl_c1, :tl_c2, :tl_c3 ]
+grab "W-KP_2",  [ :bc_a1, :bc_a2, :bc_a3, :bc_b1, :bc_b2, :bc_b3                         ]
+grab "W-KP_3",  [ :br_a1, :br_a2, :br_a3, :br_b1, :br_b2, :br_b3, :br_c1, :br_c2, :br_c3 ]
+
+# In case no numpad is available e.g. on notebooks
+
+grab "W-q",     [ :tl_a1, :tl_a2, :tl_a3, :tl_b1, :tl_b2, :tl_b3, :tl_c1, :tl_c2, :tl_c3 ]
+grab "W-w",     [ :tc_a1, :tc_a2, :tc_a3, :tc_b1, :tc_b2, :tc_b3                         ]
+grab "W-e",     [ :tr_a1, :tr_a2, :tr_a3, :tr_b1, :tr_b2, :tr_b3, :tr_c1, :tr_c2, :tr_c3 ]
+
+grab "W-a",     [ :l_a1,  :l_a2,  :l_a3,  :l_b1,  :l_b2,  :l_b3 ]
+grab "W-d",     [ :r_a1,  :r_a2,  :r_a3,  :r_b1,  :r_b2,  :r_b3 ]
+
+grab "W-z",     [ :bl_a1, :bl_a2, :bl_a3, :bl_b1, :bl_b2, :bl_b3, :bl_c1, :bl_c2, :bl_c3 ]
+grab "W-x",     [ :bc_a1, :bc_a2, :bc_a3, :bc_b1, :bc_b2, :bc_b3                         ]
+grab "W-c",     [ :br_a1, :br_a2, :br_a3, :br_b1, :br_b2, :br_b3, :br_c1, :br_c2, :br_c3 ]
+
+# Exec programs
+
+grab "W-Return", "urxvt"
+grab "A-F2", 'dmenu_run -fn "-*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*" -nb "#202020" -nf "#757575" -sb "#757575" -sf "#202020" -p "RUN:" -i'
+grab "XF86AudioMute", "amixer sset Master toggle"
+grab "XF86AudioLowerVolume", "amixer set Master 1%- unmute"
+grab "XF86AudioRaiseVolume", "amixer set Master 1%+ unmute"
+
     grab "XF86Tools",            "mpd"
     grab "XF86AudioPlay",        "ncmpcpp toggle"
     grab "XF86AudioPrev",        "ncmpcpp prev"
     grab "XF86AudioNext",        "ncmpcpp next"
-    #grab "XF86AudioMute",        "volume-controle.rb toggle"
-    #grab "XF86AudioLowerVolume", "volume-controle.rb down"
-    #grab "XF86AudioRaiseVolume", "volume-controle.rb up"
+
 
 # Tags
 
@@ -215,6 +287,33 @@ tag "terminal", "urxvt|urxvtc|xterm|konsole|kitty"
 tag "web",      "qutebrowser|dwb|iceweasel|midori|chromium|icedove|hotot|pidgin"
 
 # Views
+
+grab "W-1", :ViewSwitch1
+grab "W-2", :ViewSwitch2
+grab "W-3", :ViewSwitch3
+grab "W-4", :ViewSwitch4
+grab "W-5", :ViewSwitch5
+grab "W-6", :ViewSwitch6
+grab "W-7", :ViewSwitch7
+
+(1..7).each do |i|
+  grab "W-S-%d" % [ i ] do |c|
+    views = Subtlext::View.all
+    names = views.map { |v| v.name }
+ 
+    # Sanity check
+    if(i <= views.size)
+      # Tag client
+      tags = c.tags.reject { |t| names.include?(t.name) or "default" == t.name }
+      tags << names[i - 1]
+ 
+      c.tags = tags
+ 
+      # Tag view
+      views[i - 1].tag(names[i - 1])
+    end
+  end
+end
 
 # Sublets
 
