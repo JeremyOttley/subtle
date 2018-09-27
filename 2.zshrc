@@ -23,3 +23,6 @@ bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
 # completion in the middle of a line
 bindkey '^i' expand-or-complete-prefix
+#
+bindkey    "^[[3~"          delete-char
+bindkey    "^[3;5~"         delete-char
