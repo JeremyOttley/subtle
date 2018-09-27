@@ -1,0 +1,2 @@
+urxvtd -q -o -m -f
+pgrep redshift &> /dev/null || redshift &> /dev/null &
