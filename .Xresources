@@ -1,0 +1,220 @@
+!┌──────────────────────────────────────────────────────────────────────────┐
+!│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!│▒▒┌─────┐░▒┌─────┐░▒┌──────────────┐░▒┌──────────────┐░▒┌──────────────┐░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒┌──┐▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒┌───────────┘░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!│▒▒│▓▒▒▒▒└──┘▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▒▒▒▒▒│░▒│▓▒┌───────────┘░▒│▓▒└───────────┐░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒└──┘▒▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒┌┘░▒│▓▒└──────────┐░▒▒└───┐▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒└┐▒▒▒▒▒▒▒▒▒▒▒▒┌┘░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒└┐░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒│░▒▒▒▒▒▒│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒▒│▒▒▒▒▒▒▒▒▒▒▒▒│░▒▒│▓▒▒▒▒┌──┐▓▒▒▒▒│░▒│▓▒┌──────────┘░▒▒┌─┐░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒┌┘▒▒▒▒▒▒▒▒▒▒▒▒└┐░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓│░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓│░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒┌──┐▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒└───────────┐░▒│▓└─┘▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒└─────┘░▒└─────┘░▒└─────┘░▒└─────┘░▒└──────────────┘░▒└──────────────┘░▒│
+!│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!└──┐┌──┐▒┌┐▓▒▒▒▒▒▒┌───┐┌┐┌┐▓▒▒▒▒▒▒▒▒┌──┐▓▒▒┌────┐┌┐▓▒▒┌───┐▓▒▒▒▒▒▒▒┌───────┘
+!   ││  │▒│└────┐▓▒│   ││││└────┐▓▒┌─┘  │▒▒▒│    │││▓▒▒│   │▓▒▒▒▒▒▒▒│▒▒▒▒
+!   ││  │▒│     │▓▒│   ││││ ▓▒▒▒│▓▒│    │▒▒▒│     │└┐▓▒│   │▓▒▒▒▒▒▒▒│▒
+!   ││  │▒│     │┌─┘   ││││ ▓   │▓▒│    │▒▒▒│     │ │▓▒│   │▓▒▒▒▒▒▒▒│▒
+!   ││  │▒│     ││▒    ││└┘     │▓▒│    │▒┌─┘       │▓┌┘   │▓▒▒▒▒▒▒▒│
+!   ││  │▓│     ││▒    ││       │▓▒│    │▒│         │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  │▓│     ││     ││   ▓   │▓▒│    └┬┘         │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  └─┘     ││     └┘       │▓▒│     │          │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  ┌─┐     └┘▒      ┌┐     └┬┬┘                └─┘    └┬─┬┬─┬┬┬┘
+!   ││  │▒│              ││      ││                           ││▓│││
+!   └┘  │▓│       ▓      ││       │      │           ▒      │ ││  │
+!       └─┘              └┘                                   │   │
+!   ┌┐  ┌─┐            ┌┐         │                  ▒           │
+!   └┘  │▓│       ▓    ││                                     │
+!   ┌┐  └─┘            ││                                       ▓
+!   └┘                 └┘                                     │  │
+!                                                             │
+!
+!                                                           │
+
+xscreensaver.Dialog.headingFont:        -*-hack-*-r-normal-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-hack-*-o-normal-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-hack-*-r-normal-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-hack-*-r-normal-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-hack-*-r-normal-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-hack-*-r-normal-*-10-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-hack-*-r-normal-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.foreground:         #ffffff
+xscreensaver.Dialog.background:         #111111
+xscreensaver.Dialog.topShadowColor:     #111111
+xscreensaver.Dialog.bottomShadowColor:  #111111
+xscreensaver.Dialog.Button.foreground:  #666666
+xscreensaver.Dialog.Button.background:  #ffffff
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #666666
+xscreensaver.Dialog.text.background:    #ffffff
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #ff0000
+xscreensaver.passwd.thermometer.background:  #000000
+xscreensaver.passwd.thermometer.width:       0
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %a %b %d, %H:%M
+
+*transparent:                      false
+*lineSpace:                        0
+*cursorBlink:                      true
+*cursorUnderline:                  true
+*saveLines:                        4096
+*shading:                          75
+*mouseWheelScrollPage:             false
+*pointerBlank:                     true
+*imLocale:                         en_US.utf8
+*utf8Title:                        true
+
+*xterm*metaSendsEscape:            true
+*xterm*renderFont:                 true
+*xterm*bellIsUrgent:               true
+*xterm*allowSendEvents:            false
+*xterm*sessionMgt:                 false
+*xterm*VT100*colorULMode:          on
+*xterm*VT100*colorBDMode:          off
+*xterm*VT100.titeInhibit:          off
+*xterm*VT100.translations:         #override \n Shift <Key>Home: scroll-back(4096) \n Shift <Key>End: scroll-forw(4096)
+*xterm*VT100.geometry:             80x32
+*xterm*SimpleMenu*background:      #353535
+*xterm*SimpleMenu*foreground:      #AAA
+*xterm*dynamicColors:              true
+*xterm*eightBitInput:              true
+*xterm*eightBitControl:            false
+*xterm*eightBitOutput:             true
+*xterm*trimSelection:              true
+*xterm*charClass:                  33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+XClock*foreground: #807A86
+XClock*background: #1D1C25
+XClock*width:                      350
+XClock*height:                     350
+XClock*update:                     1
+XClock*hourColor:                  cyan
+XClock*minuteColor:                cyan
+XClock*secondColor:                red
+XClock*majorColor:                 red
+XClock*minorColor:                 cyan
+
+xscreensaver.splash:                    false
+xscreensaver.grabDesktopImages:         true
+
+XTerm.vt100.faceName: FiraCode Regular:size=11:antialias=true
+Xft.rgba: rgb
+Xft.dpi: 96
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.selectToClipboard: true
+
+Xcursor*theme: Adwaita
+XTerm.scaleHeight: 1.01
+Xmessage*defaultButton:            okay
+Xmessage*form.message.Scroll:      WhenNeeded
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+xcursor.theme: DMZ-White
+Xcursor.size: 48
+Xft.dpi: 220
+*dpi: 220
+
+URxvt.background: [40]t_background
+Powerline:size=10,xft:FontAwesome:size=10
+URxvt.font: xft:Fira Code:style=Regular:size=11,xft:FontAwesome:size=10
+URxvt.scrollBar: false
+URxvt.saveLines: 2000
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: True
+URxvt.internalBorder: 10
+URxvt.blurRadius: 20
+URxvt.depth: 32
+! URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+! URxvt.perl-ext-common: default,clipboard
+
+emacs.FontBackend: x,xft
+emacs.pointerColor:         white
+emacs.scrollBarWidth:       0
+emacs.useXIM:               true
+emacs.verticalScrollBars:   false
+
+st.termname:    st-256color
+st.font:        Hasklig:size=9:hinting=full:antialias=false
+st.cwscale:     1.1
+st.chscale:     1.1
+st.bellvolume:  0
+st.borderpx:    10px
+st.letterspace: -1
+
+#define t_transparent #00000000
+#define t_black #142233
+#define t_grey #31547f
+
+#define t_red #bf4e4c
+#define t_bred #d85856
+
+#define t_green #7fa563
+#define t_bgreen #98bf7c
+
+#define t_yellow #eda95c
+#define t_byellow #f2d060
+
+#define t_blue  #6b94b2
+#define t_bblue  #8db6d3
+
+#define t_purple #75548c
+#define t_bpurple #9974b2
+
+#define t_cyan #2c7f78
+#define t_bcyan #33a097
+
+#define t_white #ccc6b7
+#define t_bwhite #e5dcc5
+
+#define t_background t_black
+#define t_background_a #cc142233
+#define t_foreground t_white
+
+*.foreground: t_foreground
+*.background: t_background
+*.cursorColor: t_foreground
+
+! Black / Grey
+*.color0:       t_black
+*.color8:       t_grey
+
+! Red / Bright Red
+*.color9:       t_red
+*.color1:       t_bred
+
+! Green + Bright Green
+*.color10:       t_green
+*.color2:      t_bgreen
+
+! Yellow (Orange) + Bright Yellow (Yellow)
+*.color11:       t_yellow
+*.color3:      t_byellow
+
+! Blue + Bright Blue
+*.color12:       t_blue
+*.color4:      t_bblue
+
+! Magenta (Purple) + Bright Magenta
+*.color13:       t_purple
+*.color5:      t_bpurple
+
+! Cyan (Aqua) + Bright Cyan
+*.color14:       t_cyan
+*.color6:      t_bcyan
+
+! Light Grey (Selection) + White (Current Line)
+*.color15: t_white
+*.color7: t_bwhite
