@@ -40,7 +40,7 @@ or both.
 
                Example: bottom [ :views, :title ]
 
-*** Followin items are available for the panels:
+*** Following items are available for the panels:
 
 [*:views*]     List of views with buttons
 
