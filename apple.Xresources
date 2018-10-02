@@ -1,0 +1,111 @@
+!┌──────────────────────────────────────────────────────────────────────────┐
+!│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!│▒▒┌─────┐░▒┌─────┐░▒┌──────────────┐░▒┌──────────────┐░▒┌──────────────┐░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒┌──┐▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒┌───────────┘░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!│▒▒│▓▒▒▒▒└──┘▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▒▒▒▒▒│░▒│▓▒┌───────────┘░▒│▓▒└───────────┐░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒└──┘▒▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒┌┘░▒│▓▒└──────────┐░▒▒└───┐▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒└┐▒▒▒▒▒▒▒▒▒▒▒▒┌┘░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒└┐░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒│░▒▒▒▒▒▒│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒▒│▒▒▒▒▒▒▒▒▒▒▒▒│░▒▒│▓▒▒▒▒┌──┐▓▒▒▒▒│░▒│▓▒┌──────────┘░▒▒┌─┐░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒┌┘▒▒▒▒▒▒▒▒▒▒▒▒└┐░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓│░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒│░▒▒▒▒▒▒▒▒▒▒▒▒▒│▓│░│▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒┌──┐▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒└───────────┐░▒│▓└─┘▓▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│▓▒▒▒▒▒▒▒▒▒▒▒▒▒│░▒│
+!│▒▒└─────┘░▒└─────┘░▒└─────┘░▒└─────┘░▒└──────────────┘░▒└──────────────┘░▒│
+!│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+!└──┐┌──┐▒┌┐▓▒▒▒▒▒▒┌───┐┌┐┌┐▓▒▒▒▒▒▒▒▒┌──┐▓▒▒┌────┐┌┐▓▒▒┌───┐▓▒▒▒▒▒▒▒┌───────┘
+!   ││  │▒│└────┐▓▒│   ││││└────┐▓▒┌─┘  │▒▒▒│    │││▓▒▒│   │▓▒▒▒▒▒▒▒│▒▒▒▒
+!   ││  │▒│     │▓▒│   ││││ ▓▒▒▒│▓▒│    │▒▒▒│     │└┐▓▒│   │▓▒▒▒▒▒▒▒│▒
+!   ││  │▒│     │┌─┘   ││││ ▓   │▓▒│    │▒▒▒│     │ │▓▒│   │▓▒▒▒▒▒▒▒│▒
+!   ││  │▒│     ││▒    ││└┘     │▓▒│    │▒┌─┘       │▓┌┘   │▓▒▒▒▒▒▒▒│
+!   ││  │▓│     ││▒    ││       │▓▒│    │▒│         │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  │▓│     ││     ││   ▓   │▓▒│    └┬┘         │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  └─┘     ││     └┘       │▓▒│     │          │▓│    │▓▒▒▒▒▒▒▒│
+!   ││  ┌─┐     └┘▒      ┌┐     └┬┬┘                └─┘    └┬─┬┬─┬┬┬┘
+!   ││  │▒│              ││      ││                           ││▓│││
+!   └┘  │▓│       ▓      ││       │      │           ▒      │ ││  │
+!       └─┘              └┘                                   │   │
+!   ┌┐  ┌─┐            ┌┐         │                  ▒           │
+!   └┘  │▓│       ▓    ││                                     │
+!   ┌┐  └─┘            ││                                       ▓
+!   └┘                 └┘                                     │  │
+!                                                             │
+!
+!                                                           │
+
+
+#include .Xresources.d/brevon_theme
+
+*transparent:                      false
+*lineSpace:                        0
+! *letterSpace:                      -1
+! *fading:                           30
+*cursorBlink:                      true
+*cursorUnderline:                  true
+*saveLines:                        4096
+*shading:                          75
+*mouseWheelScrollPage:             false
+*pointerBlank:                     true
+*imLocale:                         en_US.utf8
+!*imFont:                           xft:SanFranciscoText-Regular:regular:size=10
+*utf8Title:                        true
+
+*xterm*metaSendsEscape:            true
+*xterm*renderFont:                 true
+*xterm*bellIsUrgent:               true
+*xterm*allowSendEvents:            false
+*xterm*sessionMgt:                 false
+*xterm*VT100*colorULMode:          on
+*xterm*VT100*colorBDMode:          off
+*xterm*VT100.titeInhibit:          off
+*xterm*VT100.translations:         #override \n Shift <Key>Home: scroll-back(4096) \n Shift <Key>End: scroll-forw(4096)
+*xterm*VT100.geometry:             80x32
+*xterm*SimpleMenu*background:      #353535
+*xterm*SimpleMenu*foreground:      #AAA
+*xterm*dynamicColors:              true
+*xterm*eightBitInput:              true
+*xterm*eightBitControl:            false
+*xterm*eightBitOutput:             true
+*xterm*trimSelection:              true
+*xterm*charClass:                  33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+XTerm.vt100.faceName: SanFranciscoDisplay-Regular:size=11:antialias=true
+!XTerm.vt100.font: -cherry-r-normal-*-12-120-75-75-c-*-iso8859-*
+Xft.rgba: rgb
+Xft.dpi: 96
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.selectToClipboard: true
+!Xcursor*theme: Adwaita
+XTerm.scaleHeight: 1.01
+Xmessage*defaultButton:            okay
+Xmessage*form.message.Scroll:      WhenNeeded
+
+URxvt*font: xft:SanFranciscoDisplay:regular:size=10, \
+            -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
+URxvt.boldFont: SanFranciscoDisplay-Bold
+URxvt.italicFont: SanFranciscoText-LightItalic
+URxvt.boldItalicFont: SanFranciscoText-BoldItalic
+URxvt.scrollBar: false
+
+st.termname:    st-256color
+st.font:        SanFranciscoText-SemiboldItalic:size=9:hinting=full:antialias=false
+st.cwscale:     1.1
+st.chscale:     1.1
+st.bellvolume:  0
+st.borderpx:    10px
+st.letterspace: -1
+
+emacs.FontBackend: x,xft
+emacs.font:                 SanFranciscoDisplay-Regular-14
+emacs.paneFont:             SanFranciscoDisplay-Regular-14
+emacs.pointerColor:         white
+emacs.scrollBarWidth:       0
+emacs.useXIM:               true
+emacs.verticalScrollBars:   false
